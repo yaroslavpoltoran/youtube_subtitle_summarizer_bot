@@ -29,7 +29,7 @@ Before you can run this Telegram bot, you'll need the following:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/youtube-subtitle-summarizer-bot.git
+   git clone https://github.com/yaroslavpoltoran/youtube_subtitle_summarizer_bot.git
    cd youtube-subtitle-summarizer-bot
    ```
 
@@ -42,8 +42,6 @@ Before you can run this Telegram bot, you'll need the following:
 3. Create a `.env` file in the project root directory and add your Telegram bot token and GPT-3 API key. See .example_env for an example.
 
    ```python
-   # .env
-
    OPENAI_API_KEY=
    TELEGRAM_TOKEN=
    ```
@@ -86,6 +84,7 @@ If you'd like to contribute to this project, please open an issue or submit a pu
 For any questions or feedback, feel free to contact the project maintainer:
 
 Yaroslav Poltoran
-Telegram: https://t.me/yaroslavpoltoran
+
+Telegram me: https://t.me/yaroslavpoltoran
 
 Happy summarizing! 🚀
