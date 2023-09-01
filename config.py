@@ -1,0 +1,8 @@
+MAX_CHUNK_SIZE = 1000
+LANGUAGE = 'en'
+PERSON_TYPE = "school student"
+MODEL = "gpt-3.5-turbo"
+MAX_TOKENS = 100
+TEMPERATURE = 0.7
+TOP_P = 0.5
+FREQUENCY_PENALTY = 0.5
