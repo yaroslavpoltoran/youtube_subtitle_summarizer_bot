@@ -79,12 +79,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you'd like to contribute to this project, please open an issue or submit a pull request. We welcome your input!
 
-## Contact
+## Contact the Project Maintainer
 
-For any questions or feedback, feel free to contact the project maintainer:
+If you have any questions or feedback, don't hesitate to reach out to the project maintainer:
 
-Yaroslav Poltoran
+**Yaroslav Poltoran**
 
-Telegram me: https://t.me/yaroslavpoltoran
+- **Telegram**: [https://t.me/yaroslavpoltoran](https://t.me/yaroslavpoltoran)
+
+Feel free to connect and get in touch with me. Your feedback is highly appreciated!
 
 Happy summarizing! 🚀
