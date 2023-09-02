@@ -44,7 +44,7 @@ def get_subtitles_link(video_url: str, language: str) -> Optional[str]:
     return None
 
 
-def get_subtitles(video_url: str, language: str = "en") -> Optional[str]:
+def get_subtitles(video_url: str, language: str) -> Optional[str]:
     subtitle_url = get_subtitles_link(video_url=video_url, language=language)
 
     if subtitle_url:
@@ -59,7 +59,7 @@ def get_subtitles(video_url: str, language: str = "en") -> Optional[str]:
             return None
 
 
-def get_plain_text(video_url: str, language: str) -> Optional[str]:
+def get_plain_text(video_url: str, language: str = cfg.LANGUAGE) -> Optional[str]:
     subs = get_subtitles(video_url=video_url, language=language)
     if subs is None:
         return None
@@ -133,11 +133,20 @@ def summarize_long_text(
 
 
 def get_summary(video_url: str) -> Optional[str]:
-    plain_text = get_plain_text(video_url=video_url)
+    plain_text = get_plain_text(video_url=video_url, language=cfg.LANGUAGE)
     if plain_text is None:
         return None
 
-    summary = summarize_long_text(text=plain_text)
+    summary = summarize_long_text(
+        text=plain_text,
+        max_chunk_size=cfg.MAX_CHUNK_SIZE,
+        person_type=cfg.PERSON_TYPE,
+        model=cfg.MODEL,
+        max_tokens=cfg.MAX_TOKENS,
+        temperature=cfg.TEMPERATURE,
+        top_p=cfg.TOP_P,
+        frequency_penalty=cfg.FREQUENCY_PENALTY,
+    )
     return summary
 
 
